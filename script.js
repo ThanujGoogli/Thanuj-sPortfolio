@@ -6,6 +6,9 @@ AOS.init({
     offset: 100
 });
 
+// Initialize EmailJS
+emailjs.init('YOUR_PUBLIC_KEY_HERE'); // You'll need to add your EmailJS public key
+
 // Navbar active link update on scroll
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
@@ -68,19 +71,30 @@ if (contactForm) {
             return;
         }
 
-        // Simulate form submission
+        // Send email using EmailJS
         const submitBtn = this.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Simulate API call with timeout
-        setTimeout(() => {
+        // Send email
+        emailjs.send('service_xxxxxx', 'template_xxxxxx', {
+            from_name: data.name,
+            from_email: data.email,
+            message: data.message,
+            to_email: 'thanuj21bolt@gmail.com'
+        })
+        .then(function(response) {
             showAlert('Message sent successfully! I\'ll get back to you soon.', 'success');
             contactForm.reset();
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-        }, 1500);
+        }, function(error) {
+            showAlert('Failed to send message. Please try again or email me directly.', 'error');
+            console.log('FAILED...', error);
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        });
     });
 }
 
