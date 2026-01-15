@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Test Engineer (SDET)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code"></i> THANUJ M P
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero vh-100 d-flex align-items-center">
+        <div class="container text-center">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="display-3 fw-bold mb-3 text-white">Test Engineer (SDET)</h1>
+                <p class="lead subtitle text-white-50 mb-4">Building quality through automation & precision testing</p>
+                <div class="hero-buttons d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="#projects" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h3 class="text-primary mb-3">Who I Am</h3>
+                            <p class="text-muted">
+                                I'm a passionate Test Engineer and SDET (Software Development Engineer in Test) with expertise in 
+                                building robust test automation frameworks and ensuring product quality at scale. I combine strong 
+                                programming skills with deep testing knowledge to create reliable, maintainable test solutions.
+                            </p>
+                            <p class="text-muted mb-4">
+                                With experience in various automation tools and frameworks, I focus on creating efficient test 
+                                strategies that improve development velocity while maintaining code quality and reducing time-to-market.
+                            </p>
+                            <div class="d-flex gap-3 flex-wrap">
+                                <a href="./Thanuj SDET Resume.pdf" class="btn btn-primary" download>
+                                    <i class="fas fa-download"></i> Download Resume
+                                </a>
+                                <a href="#contact" class="btn btn-outline-primary">
+                                    <i class="fas fa-comment"></i> Message Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="stat-card text-center p-4 bg-white rounded shadow">
+                                <h3 class="text-primary fw-bold">2+</h3>
+                                <p class="text-muted">Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stat-card text-center p-4 bg-white rounded shadow">
+                                <h3 class="text-primary fw-bold">50+</h3>
+                                <p class="text-muted">Test Cases Written</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stat-card text-center p-4 bg-white rounded shadow">
+                                <h3 class="text-primary fw-bold">10+</h3>
+                                <p class="text-muted">Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stat-card text-center p-4 bg-white rounded shadow">
+                                <h3 class="text-primary fw-bold">95%</h3>
+                                <p class="text-muted">Code Coverage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card h-100 p-4 rounded shadow-sm border-start border-primary border-4">
+                        <h5 class="text-primary mb-3"><i class="fas fa-bolt"></i> Test Automation</h5>
+                        <div class="skill-list">
+                            <span class="badge bg-light text-dark mb-2">Selenium</span>
+                            <span class="badge bg-light text-dark mb-2">Cypress</span>
+                            <span class="badge bg-light text-dark mb-2">Playwright</span>
+                            <span class="badge bg-light text-dark mb-2">Postman</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card h-100 p-4 rounded shadow-sm border-start border-success border-4">
+                        <h5 class="text-success mb-3"><i class="fas fa-code"></i> Programming Languages</h5>
+                        <div class="skill-list">
+                            <span class="badge bg-light text-dark mb-2">Java</span>
+                            <span class="badge bg-light text-dark mb-2">Typescript</span>
+                            <span class="badge bg-light text-dark mb-2">JavaScript</span>
+                            <span class="badge bg-light text-dark mb-2">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card h-100 p-4 rounded shadow-sm border-start border-warning border-4">
+                        <h5 class="text-warning mb-3"><i class="fas fa-flask"></i> Testing Frameworks</h5>
+                        <div class="skill-list">
+                            <span class="badge bg-light text-dark mb-2">TestNG</span>
+                            <span class="badge bg-light text-dark mb-2">JUnit</span>
+                            <span class="badge bg-light text-dark mb-2">Cucumber</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card h-100 p-4 rounded shadow-sm border-start border-danger border-4">
+                        <h5 class="text-danger mb-3"><i class="fas fa-tools"></i> Tools & CI/CD</h5>
+                        <div class="skill-list">
+                            <span class="badge bg-light text-dark mb-2">Jenkins</span>
+                            <span class="badge bg-light text-dark mb-2">Docker</span>
+                            <span class="badge bg-light text-dark mb-2">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary mb-2">
+                                <i class="fas fa-shopping-cart"></i> E-Commerce Test Automation Suite
+                            </h5>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Selenium</span>
+                                <span class="badge bg-success">Java</span>
+                                <span class="badge bg-info">TestNG</span>
+                            </div>
+                            <p class="card-text text-muted">
+                                Developed comprehensive test automation framework for e-commerce platform with 500+ test cases. 
+                                Implemented parallel execution reducing test time by 60% and integrated with Jenkins for CI/CD pipeline.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary mb-2">
+                                <i class="fas fa-plug"></i> API Testing Framework
+                            </h5>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">RestAssured</span>
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-info">Pytest</span>
+                            </div>
+                            <p class="card-text text-muted">
+                                Built robust API testing framework with data-driven testing capabilities. Automated 200+ API endpoints 
+                                with comprehensive error handling and detailed reporting. Achieved 95% code coverage.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary mb-2">
+                                <i class="fas fa-chart-line"></i> Performance Testing Dashboard
+                            </h5>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">JMeter</span>
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-info">HTML/CSS</span>
+                            </div>
+                            <p class="card-text text-muted">
+                                Created automated performance testing suite with custom dashboard for monitoring test results. 
+                                Identified and reported critical performance bottlenecks, improving application response time by 40%.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm project-card">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary mb-2">
+                                <i class="fas fa-mobile-alt"></i> Mobile App Test Automation
+                            </h5>
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Appium</span>
+                                <span class="badge bg-success">Java</span>
+                                <span class="badge bg-info">TestNG</span>
+                            </div>
+                            <p class="card-text text-muted">
+                                Automated end-to-end testing for iOS and Android applications. Implemented BDD framework using Cucumber 
+                                for better test readability and maintenance. Achieved 85% test coverage.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-link"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-2" data-aos="fade-up">Get In Touch</h2>
+            <p class="text-center text-muted mb-5" data-aos="fade-up" data-aos-delay="100">
+                I'm always open to new opportunities and interesting projects. Feel free to reach out!
+            </p>
+            
+            <div class="row g-4">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="contact-card p-4 rounded shadow-sm mb-3 border-start border-primary border-4">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-primary bg-opacity-10 rounded-circle p-3 me-3">
+                                    <i class="fas fa-envelope text-primary fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Email</h6>
+                                    <a href="mailto:thanuj21bolt@gmail.com" class="text-decoration-none">thanuj21bolt@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-card p-4 rounded shadow-sm mb-3 border-start border-success border-4">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-success bg-opacity-10 rounded-circle p-3 me-3">
+                                    <i class="fas fa-phone text-success fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Phone</h6>
+                                    <a href="tel:+919786823316" class="text-decoration-none">+91 9786823316</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-card p-4 rounded shadow-sm border-start border-warning border-4">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-warning bg-opacity-10 rounded-circle p-3 me-3">
+                                    <i class="fas fa-map-marker-alt text-warning fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Location</h6>
+                                    <p class="mb-0">Trichy, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-control form-control-lg" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Your Email</label>
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control form-control-lg" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <p class="mb-2 mb-md-0">&copy; 2026 THANUJ M P. All rights reserved.</p>
+                <div class="social-links d-flex gap-3">
+                    <a href="https://www.linkedin.com/in/thanuj-m-p-5371b9182/" target="_blank" title="LinkedIn" class="text-white text-decoration-none hover-icon">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/MPTHANUJ" target="_blank" title="GitHub" class="text-white text-decoration-none hover-icon">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a href="mailto:thanuj21bolt@gmail.com" title="Email" class="text-white text-decoration-none hover-icon">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
